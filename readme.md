@@ -1,6 +1,6 @@
 
 # Node.js
-![Node](/Img/node0.png)
+![Node](https://raw.githubusercontent.com/uwspstar/Full-Stack-Developer/master/Img/node0.png)
 
 - request and response
 ```
