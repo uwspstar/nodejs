@@ -1,6 +1,6 @@
 
 # Node.js
-![Node](/Img/node0.png)
+![Node](Full-Stack-Developer/Img/node0.png)
 
 - request and response
 ```
