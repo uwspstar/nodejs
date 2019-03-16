@@ -30,6 +30,11 @@ logGreeting(greetMe);
 logGreeting(function() {
 	console.log('Hello !');
 });
+
+// arrow function expression to create a function on the fly
+logGreeting(() =>{
+	console.log('Hello !');
+});
 ```
 - request and response
 ```
