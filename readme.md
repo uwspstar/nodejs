@@ -58,6 +58,16 @@ greet();
 // 3. Otherwise, create a new module for the file and save it to the cache.
 //    Then have it load  the file contents before returning its exports
 //    object.
+/*
+Module.wrap = function(script) {
+  return Module.wrapper[0] + script + Module.wrapper[1];
+};
+
+Module.wrapper = [
+  '(function (exports, require, module, __filename, __dirname) { ',
+  '\n});'
+];
+*/
 ```
 - IIFE
 ```
