@@ -208,6 +208,10 @@ Module.prototype._compile = function(content, filename) {
 > - Module.exports is what the require function returns. 
 > - And, this works because your code is actually wrapped in a function, a function expression, that is given these things as function parameters.
 
+- What's the difference between module.exports and exports ?
+> The first exposes the object it points to. The latter exposes the properties of the object it points
+to.
+ 
 - request and response
 ```
 
