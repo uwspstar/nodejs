@@ -353,3 +353,8 @@ You could install nodemon globally if you wanted (this is NOT required though
 - because we can just run it locally): npm install -g nodemon would do the trick. 
 Specifically the -g flag ensures that the package gets added as a global package which you now can use anywhere on your machine, directly from inside the terminal or command prompt.
 ```
+- Difference between local and global packages 
+
+> - local packages are installed in the directory where you run npm install <package-name> , and they are put in the node_modules folder under this directory
+> - global packages are all put in a single place in your system (exactly where depends on your setup), regardless of where you run npm install -g <package-name>
+ 
