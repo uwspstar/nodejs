@@ -185,6 +185,10 @@ Module.prototype._compile = function(content, filename) {
 };
 
 ```
+> - require is a function that you pass a path to. 
+> - Module.exports is what the require function returns. 
+> - And, this works because your code is actually wrapped in a function, a function expression, that is given these things as function parameters.
+
 - request and response
 ```
 
