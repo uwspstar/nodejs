@@ -57,7 +57,20 @@ greet();
 //    Then have it load  the file contents before returning its exports
 //    object.
 ```
+- IIFE
+```
+var firstname = 'Jane';
 
+(function (lastname) {
+
+	var firstname = 'John';
+	console.log(firstname);
+	console.log(lastname);
+	
+}('Doe'));
+
+console.log(firstname);
+```
 - request and response
 ```
 
