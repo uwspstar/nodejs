@@ -356,5 +356,5 @@ Specifically the -g flag ensures that the package gets added as a global package
 - Difference between local and global packages 
 
 > - local packages are installed in the directory where you run npm install <package-name> , and they are put in the node_modules folder under this directory
-> - global packages are all put in a single place in your system (exactly where depends on your setup), regardless of where you run npm install -g <package-name>
- 
+> - global packages are all put in a single place in your system (exactly where depends on your setup), regardless of where you run npm install -g <package-name> 
+> - In general, all packages should be installed locally. This makes sure you can have dozens of applications in your computer, all running a different version of each package if needed.
