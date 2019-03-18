@@ -51,6 +51,10 @@ module.exports = greet;
 ```
 var greet = require('./greet');
 greet();
+
+```
+- Module cache
+```
 // Check the cache for the requested file.
 // 1. If a module already exists in the cache: return its exports object.
 // 2. If the module is native: call `NativeModule.require()` with the
@@ -58,7 +62,10 @@ greet();
 // 3. Otherwise, create a new module for the file and save it to the cache.
 //    Then have it load  the file contents before returning its exports
 //    object.
-/*
+```
+- Module.wrap
+```
+
 Module.wrap = function(script) {
   return Module.wrapper[0] + script + Module.wrapper[1];
 };
@@ -67,7 +74,7 @@ Module.wrapper = [
   '(function (exports, require, module, __filename, __dirname) { ',
   '\n});'
 ];
-*/
+
 ```
 - IIFE
 ```
