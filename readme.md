@@ -5,6 +5,8 @@
 
 ![Node](https://raw.githubusercontent.com/uwspstar/Full-Stack-Developer/master/Img/node0.png)
 
+>A Node.js app is run by a single process, without creating a new thread for every request. Node provides a set of asynchronous I/O primitives in its standard library
+
 - First Class Function
 ```
 // function statement
