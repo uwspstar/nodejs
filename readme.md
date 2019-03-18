@@ -211,7 +211,34 @@ Module.prototype._compile = function(content, filename) {
 - What's the difference between module.exports and exports ?
 > The first exposes the object it points to. The latter exposes the properties of the object it points
 to.
- 
+
+```
+const car = {
+brand: 'Ford',
+model: 'Fiesta'
+}
+module.exports = car
+//..in the other file
+const car = require('./car')
+```
+```
+const car = {
+	brand: 'Ford',
+	model: 'Fiesta'
+}
+exports.car = car
+//or directly
+exports.car = {
+	brand: 'Ford',
+	model: 'Fiesta'
+}
+//And in the other file, you'll use it by referencing a property of your import:
+const items = require('./items')
+items.car
+//or
+const car = require('./items').car
+```
+
 - request and response
 ```
 
