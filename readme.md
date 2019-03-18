@@ -36,6 +36,28 @@ logGreeting(() =>{
 	console.log('Hello !');
 });
 ```
+- module.exports
+```
+var greet = function() {
+	console.log('Hello!');
+};
+
+module.exports = greet;
+```
+- require
+
+```
+var greet = require('./greet');
+greet();
+// Check the cache for the requested file.
+// 1. If a module already exists in the cache: return its exports object.
+// 2. If the module is native: call `NativeModule.require()` with the
+//    filename and return the result.
+// 3. Otherwise, create a new module for the file and save it to the cache.
+//    Then have it load  the file contents before returning its exports
+//    object.
+```
+
 - request and response
 ```
 
