@@ -10,7 +10,7 @@
 > - A Node.js app is run by a single process, without creating a new thread for every request. Node provides a set of asynchronous I/O primitives in its standard library. When Node.js needs to perform an I/O operation, like reading from the network, access a database or the filesystem, instead of blocking the thread Node.js will resume the operations when the response comes back, instead of wasting CPU cycles waiting.
 > - JavaScript allows to create asynchronous and non-blocking code in a very simple way, by using a single thread, callback functions and event-driven programming.
 
-- First Class Function
+#### First Class Function
 ```
 // function statement
 function greet() {
@@ -43,7 +43,7 @@ logGreeting(() =>{
 	console.log('Hello !');
 });
 ```
-- Simple Hello World Web Server
+#### Simple Hello World Web Server
 ```
 const http = require('http')
 const hostname = '127.0.0.1'
@@ -57,7 +57,7 @@ server.listen(port, hostname, () => {
 console.log(`Server running at http://${hostname}:${port}/`)
 })
 ```
-- module.exports
+#### module.exports
 ```
 var greet = function() {
 	console.log('Hello!');
@@ -65,14 +65,14 @@ var greet = function() {
 
 module.exports = greet;
 ```
-- require
+#### require
 
 ```
 var greet = require('./greet');
 greet();
 
 ```
-- Module._load
+#### Module._load
 ```
 Module._load = function(request, parent, isMain) {
   if (parent) {
@@ -109,7 +109,7 @@ Module._load = function(request, parent, isMain) {
 ```
 
 
-- Module cache
+#### Module cache
 ```
 // Check the cache for the requested file.
 // 1. If a module already exists in the cache: return its exports object.
@@ -119,7 +119,7 @@ Module._load = function(request, parent, isMain) {
 //    Then have it load  the file contents before returning its exports
 //    object.
 ```
-- Module.wrap
+#### Module.wrap
 ```
 
 Module.wrap = function(script) {
@@ -132,7 +132,7 @@ Module.wrapper = [
 ];
 
 ```
-- IIFE
+#### IIFE
 ```
 var firstname = 'Jane';
 
@@ -146,7 +146,7 @@ var firstname = 'Jane';
 
 console.log(firstname);
 ```
-- compile
+#### compile
 ```
 // Run the file contents in the correct scope or sandbox. Expose
 // the correct helper variables (require, module, exports) to
@@ -208,7 +208,7 @@ Module.prototype._compile = function(content, filename) {
 > - Module.exports is what the require function returns. 
 > - And, this works because your code is actually wrapped in a function, a function expression, that is given these things as function parameters.
 
-- What's the difference between module.exports and exports ?
+#### What's the difference between module.exports and exports ?
 > The first exposes the object it points to. The latter exposes the properties of the object it points
 to.
 
@@ -239,7 +239,7 @@ items.car
 const car = require('./items').car
 ```
 
-- request and response
+#### request and response
 ```
 
 const http = require('http');
@@ -277,7 +277,7 @@ function rqListener(req,res){
 http.createServer(rqListener);
 */
 ```
-- routing
+#### routing
 ```
 const http = require('http');
 const fs = require('fs');
@@ -322,7 +322,7 @@ Global features are always available, you don't need to import them into the fil
 
 Core Node.js Modules don't need to be installed (NO npm install is required) but you need to import them when you want to use features exposed by them.
 
-- Example:
+#### Example:
 ```
 const fs = require('fs');
 
@@ -337,23 +337,15 @@ const sessions = require('express-session');
 ```
 
 
-- added nodemon as a local dependency to our project.
+#### added nodemon as a local dependency to our project.
 
-```
-The good thing about local dependencies is that you can share projects without the node_modules folder (where they are stored) and you can run npm install in a project to then re-create that node_modules folder. 
-This allows you to share only your source code, hence reducing the size of the shared project vastly.
+>The good thing about local dependencies is that you can share projects without the node_modules folder (where they are stored) and you can run npm install in a project to then re-create that node_modules folder. 
+>This allows you to share only your source code, hence reducing the size of the shared project vastly.
+>The attached course code snippets also are shared in that way, hence you need to run npm install in the extracted packages to be able to run my code!
+>run nodemon app.js would not work in the terminal or command line because we don't use local dependencies there but global packages.
+>You could install nodemon globally if you wanted (this is NOT required though - because we can just run it locally): npm install -g nodemon would do the trick. Specifically the -g flag ensures that the package gets added as a global package which you now can use anywhere on your machine, directly from inside the terminal or command prompt.
 
-The attached course code snippets also are shared in that way, 
-hence you need to run npm install in the extracted packages to be able to run my code!
-
-run nodemon app.js would not work in the terminal or command line 
-because we don't use local dependencies there but global packages.
-
-You could install nodemon globally if you wanted (this is NOT required though 
-- because we can just run it locally): npm install -g nodemon would do the trick. 
-Specifically the -g flag ensures that the package gets added as a global package which you now can use anywhere on your machine, directly from inside the terminal or command prompt.
-```
-- Difference between local and global packages 
+#### Difference between local and global packages 
 
 > - local packages are installed in the directory where you run npm install <package-name> , and they are put in the node_modules folder under this directory
 > - global packages are all put in a single place in your system (exactly where depends on your setup), regardless of where you run npm install -g <package-name> 
