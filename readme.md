@@ -7,6 +7,11 @@
 
 ![Node](https://raw.githubusercontent.com/uwspstar/Full-Stack-Developer/master/Img/node0.png)
 
+### 3 ways Asynchronous JavaScript
+> - CallBack
+> - Promises
+> - Async and Await
+
 #### Node Core
 > - Node.js is a runtime environment for JavaScript that runs on the server.
 > - A Node.js app is run by a single process, without creating a new thread for every request. Node provides a set of asynchronous I/O primitives in its standard library. When Node.js needs to perform an I/O operation, like reading from the network, access a database or the filesystem, instead of blocking the thread Node.js will resume the operations when the response comes back, instead of wasting CPU cycles waiting.
