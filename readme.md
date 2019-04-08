@@ -11,6 +11,7 @@
 > - CallBack
 	- [avoid callback hell](https://github.com/uwspstar/nodejs/blob/master/avoid_callback_hell.js)
 > - Promises
+	- [promise](https://github.com/uwspstar/nodejs/blob/master/promise.js)
 > - Async and Await
 
 #### Node Core
