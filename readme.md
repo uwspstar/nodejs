@@ -13,6 +13,7 @@
 > - Promises
 	- [promise](https://github.com/uwspstar/nodejs/blob/master/promise.js)
 > - Async and Await
+	- [async](https://github.com/uwspstar/nodejs/blob/master/async-solution.js)
 
 #### Node Core
 > - Node.js is a runtime environment for JavaScript that runs on the server.
