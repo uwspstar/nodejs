@@ -35,3 +35,11 @@
 
 // 11. dependencies
 > npm install jshint --save-dev
+
+// 12. globle version
+// check globle version
+> npm -g outdated
+// install globle version
+> npm install -g npm
+// npm i -g npm@6.1.0
+// uninstall > npm un -g xxx@x.x.x
