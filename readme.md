@@ -7,6 +7,8 @@
 
 ![Node](https://raw.githubusercontent.com/uwspstar/Full-Stack-Developer/master/Img/node0.png)
 
+### Project Setup
+- [project-init](https://github.com/uwspstar/nodejs/blob/master/project-init.md)
 ### 3 ways Asynchronous JavaScript
 > - CallBack
 	- [avoid callback hell](https://github.com/uwspstar/nodejs/blob/master/avoid_callback_hell.js)
