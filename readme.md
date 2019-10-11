@@ -5,6 +5,26 @@
 ```
 "Right click on project" -> Open Command Promp Here..
 >node <filename> // or project with >npm start
+
+make sure update package.json
+"scripts": {
+    "start": "node app.js"
+}
+ 
+package.json
+{
+  "name": "nodejs-console-app",
+  "version": "0.0.0",
+  "description": "NodejsConsoleApp",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
+
 ```
 ### online course
 - [Master Node JS, build REST APIs with Node.js, GraphQL APIs, add Authentication, use MongoDB, SQL & much more!](https://www.udemy.com/nodejs-the-complete-guide/learn/v4/overview)
