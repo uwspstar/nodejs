@@ -1,5 +1,18 @@
 
 # Node.js
+### recursive in Node module exports
+```
+let obj = {
+
+    reverseStrWithRecursive: str => {
+        if (str.length < 2) return str;
+        let tmp = str.substr(1);
+        return obj.reverseStrWithRecursive(tmp) + str[0]; //inside node the recusive is 
+    } 
+}
+
+module.exports = obj;
+```
 ### other
 - open node.js console project under the vs2019
 ```
