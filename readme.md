@@ -1,6 +1,9 @@
 
 # Node.js
 
+### Semantic Versioning 
+- Major.Minor.Patch (4.1.3)
+- https://www.udemy.com/course/nodejs-master-class/learn/lecture/9990332#overview
 ### recursive in Node module exports
 ```
 let obj = {
